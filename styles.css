@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background: #f6f36b;
+  font-family: "Times New Roman", serif;
+  color: #111;
+}
+
+/* Simula papel viejo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23000' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.logo {
+  font-family: "Brush Script MT", cursive;
+  font-size: 72px;
+  color: #1f4fa3;
+}
+
+.logo span {
+  color: #b22222;
+}
+
+.flag {
+  width: 70px;
+  margin-top: 10px;
+}
+
+.cover {
+  display: block;
+  margin: 30px auto;
+  border: 6px solid #1f4fa3;
+  box-shadow: 0 0 0 4px #b22222;
+  max-width: 320px;
+}
+
+.freq {
+  text-align: center;
+  font-size: 42px;
+  color: #b22222;
+  margin: 20px 0;
+  letter-spacing: 3px;
+}
+
+.section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid #999;
+}
+
+.section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.notice {
+  font-size: 14px;
+  color: #444;
+  font-style: italic;
+}
+
+.glitch {
+  color: #b22222;
+  font-family: monospace;
+  margin-top: 15px;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 10px 20px;
+  font-size: 14px;
+  color: #b22222;
+}
